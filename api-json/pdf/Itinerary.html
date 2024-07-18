@@ -1,0 +1,86 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/lushu/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/lushu/static/css/tos_workbench_style.css">
+    <link rel="stylesheet" type="text/css" href="/lushu/static/user/itinerary.css">
+    <style>
+        div{
+            color:#666e76
+        }
+        .editQuote__sectionHeader___bWqD4{
+            border-bottom: 1px solid #c7c7c7;
+            padding: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .editQuote__totalPrice___2W7Ue{
+            border-bottom: 1px solid #c7c7c7;
+            padding: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        th,td{
+            color:#666e76;
+            height: 50px;
+            line-height: 22px;
+            border: 1px solid #c7c7c7;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        .title{
+            font-size: 50px;
+            font-weight: 700;
+            color: #00b2b4;
+        }
+        .logo_name{
+            font-size: 16px;
+        }
+        #app, #itineraryMain {
+            width: 100%;
+        }
+        .codes{
+            font-size: 18px;
+        }
+        .td:nth-child(1) .tdInner, .th:nth-child(1) .tdInner{
+            max-width: unset;
+        }
+        .td .tdInner, .th.tdInner{
+            max-width: unset;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+<div id="itineraryMain" class="trial">
+    <div>
+        <div class="itineraryHead">
+            <h2>{{title}}</h2>
+            <div class="tripRoute">{{city}}</div>
+        </div>
+        <div class="itineraryBody">
+            <div class="tripDate">{{time}}</div>
+            <div class="itineraryTable">
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="th">日期</th>
+                        <th class="th">日程安排</th>
+                        <th class="th">住宿</th>
+                        <th class="th">城际交通</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                       {{content}}
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <img src="/lushu/static/user/logo.png" style="width: 1.8rem; height: 1.8rem;">
+    </div>
+</div>
+</body>
+</html>

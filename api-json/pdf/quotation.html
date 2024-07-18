@@ -1,0 +1,97 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/lushu/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/lushu/static/css/tos_workbench_style.css">
+	<style>
+		div{
+			color:#666e76
+		}
+		.editQuote__sectionHeader___bWqD4{
+			border-bottom: 1px solid #c7c7c7;
+			padding: 0 0 10px 0;
+			font-size: 32px;
+			font-weight: 700;
+		}
+		.editQuote__totalPrice___2W7Ue{
+			border-bottom: 1px solid #c7c7c7;
+			padding: 0 0 10px 0;
+			font-size: 32px;
+			font-weight: 700;
+		}
+		th,td{
+			color:#666e76;
+			height: 50px;
+			line-height: 50px;
+			border: 1px solid #c7c7c7;
+			text-align: center;
+		}
+		table{
+			width: 100%;
+		}
+		.title{
+			font-size: 50px;
+			font-weight: 700;
+			color: #00b2b4;
+		}
+		.logo_name{
+			font-size: 16px;
+		}
+
+	</style>
+</head>
+<body style="background-color: white;">
+<div id="pageWrap" class="basicLayout__basicLayout___3_npk" style="padding-left: 0;">
+	<div class="transitIndicator__transitIndicator___3m8Gd">
+		<div class="transitIndicator__transitBar___2q3uc"></div>
+	</div>
+	<div class="basicLayout__layoutMain___1NUHo">
+		<div id="content" class="basicLayout__pageContainer___2LQ1G" style="">
+			<div class="pagePanel__pagePanelContainer___3FpIY">
+				<div class="pagePanel pagePanel__pagePanel___3fszW contentBase__contentContainer___2oebb pagePanel__auto___1xn2A">
+					<div class="contentBase__contentContainerInner___6KAPZ" style="padding: 32px 0;">
+						<div class="tosProjectCssMarker">
+							<div class="editQuote__editQuote___3FZQ0 editQuote__editQuoteComponent___1aUD9 projectTripQuote__tripQuoteContainer___1A-sC">
+								<div>
+									<div style="width: 100%;height: 50px;width: 100%;height: 120px;margin: 0 auto;background-color: white;padding: 0px 0px 2px 40px;line-height: 50px;">
+										<div class="title">{{title}}</div>
+										<div class="logo_name">云驴通</div>
+									</div>
+									{{quotation}}
+
+
+									<div class="editQuote__contentContainer___2A0KS">
+										<div class="editQuote__section___ZB-wU">
+											<div class="editQuote__sectionHeader___bWqD4">费用说明</div>
+											{{illustrate}}
+
+
+										</div>
+										<div class="editQuote__section___ZB-wU editQuote__notIncludes___2UqSO">
+											<div class="editQuote__sectionHeader___bWqD4">费用不包括</div>
+											<div class="editQuote__header___315Tv editQuote__empty___2VV9q"></div>
+											{{not_included}}
+
+										</div>
+										<div class="editQuote__section___ZB-wU">
+											<div class="editQuote__sectionHeader___bWqD4">可选付费项目</div>
+											{{Paiditems}}
+
+										</div>
+										<div class="editQuote__section___ZB-wU editQuote__introduction___1yGlX">
+											<div class="editQuote__sectionHeader___bWqD4">补充说明</div>
+											<div class="editQuote__introductionContent___1GgRE">
+												{{content}}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
